@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "e647f46e-e700-4cae-9cf6-8955020793e2",
+		"name": "marvelAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "comics con mas Personajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/comics/conMasHeroes/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"comics",
+						"conMasHeroes",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "borrado de heroe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "heroe con comics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8888/heroes/comics/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"heroes",
+						"comics",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear heroe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Iron Man\",\r\n  \"descripcion\": \"Genio, millonario, filántropo y superhéroe.\",\r\n  \"urlImagen\": \"https://ejemplo.com/ironman.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8888/heroes/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"heroes",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

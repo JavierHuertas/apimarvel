@@ -1,0 +1,21 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_ON_EXIT=FALSE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+       ddl-auto: create-drop
+  profiles:
+    active: 'local'
+server:
+  port: 8888
+datos:
+  hash: b92dc2a72a190a0d13693cc26d7ac2e6
+  publickey: aebc678474cd5d57943dde30d3273251
